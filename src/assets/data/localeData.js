@@ -8,6 +8,11 @@ export const languages = [
         icon: 'en',
     },
     {
+        locale: 'es',
+        name: 'Spanish',
+        icon: 'es',
+    },
+    {
         locale: 'fr',
         name: 'French',
         icon: 'fr',
