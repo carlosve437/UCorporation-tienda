@@ -3,21 +3,20 @@
  * embryo comes with built in firebase database features
  * You Need To Add Your Firsebase App Account Details Here
  */
-import firebase from 'firebase/app';
-import 'firebase/database';
+import firebase from "firebase/app";
+import "firebase/database";
 
 var firebaseConfig = {
-	apiKey: "AIzaSyBXyGS6LdNauzj-nn4ItKNV0tTFSm9lYuI",
-	authDomain: "embryo-react-29ecb.firebaseapp.com",
-	databaseURL: "https://embryo-react-29ecb.firebaseio.com",
-	projectId: "embryo-react-29ecb",
-	storageBucket: "embryo-react-29ecb.appspot.com",
-	messagingSenderId: "118413959528",
-	appId: "1:118413959528:web:2e99d374df424af2e636dd",
-	measurementId: "G-K3MWJBBM6T"
- };
- // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
-
+  apiKey: "AIzaSyCWxrH8DG1OoVBDuQVEBzASwl_oR8uqOyk",
+  authDomain: "uscorporation-6fb59.firebaseapp.com",
+  databaseURL: "https://uscorporation-6fb59.firebaseio.com",
+  projectId: "uscorporation-6fb59",
+  storageBucket: "uscorporation-6fb59.appspot.com",
+  messagingSenderId: "1024939505514",
+  appId: "1:1024939505514:web:79f56566f3145af691d713",
+  measurementId: "G-BJP0WQWL3K",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 export default firebase;
