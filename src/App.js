@@ -101,19 +101,7 @@ class App extends React.Component {
    render() {
       const { location } = this.props;
 		const { selectedLocale, alertType,theme } = this.props;
-      const currentAppLocale = AppLocale[selectedLocale.locale];
-      /*const site = () => {
-         switch(actually){
-             case 'first':
-             return  AsyncHomePageOneComponent;
-             case 'second':
-             return  AsyncHomePageTwoComponent;
-             case 'third':
-             return  AsyncHomePageThreeComponent;
-             default:
-             return  AsyncHomePageOneComponent;
-         }
-     }*/
+		const currentAppLocale = AppLocale[selectedLocale.locale];
 		console.log(theme)
       return (
          <MuiThemeProvider theme={theme}>
@@ -141,7 +129,7 @@ class App extends React.Component {
                         }
                         <ProductReview />
                         <Switch>
-                           <Route exact path="/" component={AsyncHomePageTwoComponent } />
+                           <Route exact path="/" component={AsyncHomePageOneComponent} />
                            <Route path="/home-two" component={AsyncHomePageTwoComponent} />
                            <Route path="/home-three" component={AsyncHomePageThreeComponent} />
                            <Route path="/products/:type/:id" component={AsyncProductDetailComponent} />
