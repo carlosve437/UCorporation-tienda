@@ -10,24 +10,6 @@ export default [
       "path": "#",
       "icon": "home",
       "child_routes": [
-         {
-            "path": "/",
-            "menu_title": "menu.HomeOne",
-            "icon": "arrow_right_alt",
-            "child_routes": null
-         },
-         {
-            "path": "/home-two",
-            "menu_title": "menu.HomeTwo",
-            "icon": "arrow_right_alt",
-            "child_routes": null
-         },
-         {
-            "path": "/home-three",
-            "menu_title": "menu.HomeThree",
-            "icon": "arrow_right_alt",
-            "child_routes": null
-         }
       ]
    },
    {

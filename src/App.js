@@ -8,6 +8,9 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import { IntlProvider } from 'react-intl';
 import { Route, Switch } from 'react-router-dom';
 
+// firebase
+import firebase from './firebase';
+
 // css
 import './lib/embryoCss.js';
 
@@ -25,9 +28,9 @@ import ProductReview from './components/global/review-popup/ProductReview';
 
 //Add Loaders
 import {
-   AsyncHomePageOneComponent,
+   //AsyncHomePageOneComponent,
    AsyncHomePageTwoComponent,
-   AsyncHomePageThreeComponent,
+  // AsyncHomePageThreeComponent,
    AsyncAboutUSComponent,
    AsyncCartComponent,
    AsyncCheckOutComponent,
@@ -60,11 +63,18 @@ import AdminLayout from './components/AdminLayout';
 //const EcommerceLayout = () => 
 
 class App extends React.Component {
+   constructor() {
+      super();
+      this.state = ({
+        user: null,
+      });
+      this.authListener = this.authListener.bind(this);
+    }
 
 	componentDidMount(){
 		const { darkMode,rtlLayout } = this.props;
 		this.rtlLayoutOption(rtlLayout);
-		this.darkModeHanlder(darkMode);
+      this.darkModeHanlder(darkMode);
 	}
 
 	rtlLayoutOption(rtlLayout) {
@@ -96,7 +106,20 @@ class App extends React.Component {
    getUrl(pathname) {
       let pathArray = pathname.split('/');
       return `/${pathArray[1]}` === '/admin-panel' ? true : false;
-	}
+   }
+   
+   authListener() {
+      firebase.auth().onAuthStateChanged((user) => {
+        console.log(user);
+        if (user) {
+          this.setState({ user });
+          localStorage.setItem('user', user.uid);
+        } else {
+          this.setState({ user: null });
+          localStorage.removeItem('user');
+        }
+      });
+    }
 
    render() {
       const { location } = this.props;
@@ -127,11 +150,11 @@ class App extends React.Component {
                               }
                            </Fragment>
                         }
+                        
                         <ProductReview />
                         <Switch>
-                           <Route exact path="/" component={AsyncHomePageOneComponent} />
-                           <Route path="/home-two" component={AsyncHomePageTwoComponent} />
-                           <Route path="/home-three" component={AsyncHomePageThreeComponent} />
+                           <Route exact path="/" component={AsyncHomePageTwoComponent} />
+
                            <Route path="/products/:type/:id" component={AsyncProductDetailComponent} />
                            <Route path="/cart" component={AsyncCartComponent} />
                            <Route path="/check-out" component={AsyncCheckOutComponent} />
