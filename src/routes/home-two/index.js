@@ -108,7 +108,7 @@ class HomePageTwo extends React.Component {
                            <div className="iron-sec-heading-wrap p-30 pb-0">
                               <div className="d-sm-flex justify-content-between align-items-center">
                                  <div className="heading-title mb-sm-0 mb-10">
-                                    <h2 className="mb-0">Lightening Deals</h2>
+                                    <h2 className="mb-0">Ofertas de relámpagos</h2>
                                  </div>
                                  <Link to="/shop" className="text-14 font-medium text-uppercase">view all</Link>
                               </div>
