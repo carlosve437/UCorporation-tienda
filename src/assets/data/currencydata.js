@@ -2,31 +2,13 @@
  * currency data unicode
  */
 export const currencies = [
-	{
-		name: 'INR',
-		icon: require('../../assets/flag-icons/icons8-india.png'),
-		unicode: 'INR'
-	},
+	
 	{
 		name: 'USD',
 		icon: require('../../assets/flag-icons/icons8-usa.png'),
 		unicode: 'USD'
 	},
-	{
-		name: 'NZD',
-		icon: require('../../assets/flag-icons/icons8-new_zealand.png'),
-		unicode: 'NZD'
-	},
-	{
-		name: 'GMD',
-		icon: require('../../assets/flag-icons/icons8-germany.png'),
-		unicode: 'GMD'
-	},
-	{
-		name: 'ILR',
-		icon: require('../../assets/flag-icons/icons8-israel.png'),
-		unicode: 'ILR'
-	},
+
 	{
 		name: 'EUR',
 		icon: require('../../assets/flag-icons/icons8-france.png'),
