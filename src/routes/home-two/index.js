@@ -10,7 +10,7 @@ import BannerSliderTwo from '../../components/widgets/BannerSliderTwo';
 import CallToAction from '../../components/widgets/CallToAction';
 import TopProducts from '../../components/widgets/TopProducts';
 import PartenersSliderV2 from '../../components/widgets/PartenersSliderV2';
-import SubscribeBoxV2 from '../../components/widgets/SubscribeBoxV2';
+{/*import SubscribeBoxV2 from '../../components/widgets/SubscribeBoxV2';*/}
 import ContentLoader from '../../components/global/loaders/ContentLoader';
 import ShopCard from '../../components/widgets/ShopCard';
 
@@ -38,6 +38,7 @@ class HomePageTwo extends React.Component {
       this.getClients();
    }
 
+   
    //get banner data
    getBannerData() {
       const bannerRef = firebase.database().ref('banner_two');
@@ -143,10 +144,10 @@ class HomePageTwo extends React.Component {
                            </div>
                         </div>
                      </div>
-                     {/* subscribe  section start */}
+                     {/* subscribe  section start 
                      <div className="iron-subscribe-box-v2 bg-primary section-pad position-relative">
                         <SubscribeBoxV2 />
-                     </div>
+                     </div>*/}
                   </div>
                   :
                   <ContentLoader />
