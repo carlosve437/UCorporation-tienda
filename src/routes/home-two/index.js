@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 //component
 import BannerSliderTwo from '../../components/widgets/BannerSliderTwo';
 import CallToAction from '../../components/widgets/CallToAction';
-import TopProducts from '../../components/widgets/TopProducts';
+{/*import TopProducts from '../../components/widgets/TopProducts';*/}
 import PartenersSliderV2 from '../../components/widgets/PartenersSliderV2';
 {/*import SubscribeBoxV2 from '../../components/widgets/SubscribeBoxV2';*/}
 import ContentLoader from '../../components/global/loaders/ContentLoader';
@@ -109,7 +109,7 @@ class HomePageTwo extends React.Component {
                            <div className="iron-sec-heading-wrap p-30 pb-0">
                               <div className="d-sm-flex justify-content-between align-items-center">
                                  <div className="heading-title mb-sm-0 mb-10">
-                                    <h2 className="mb-0">Ofertas de relámpagos</h2>
+                                    <h2 className="mb-0">Ofertas U Store</h2>
                                  </div>
                                  <Link to="/shop" className="text-14 font-medium text-uppercase">view all</Link>
                               </div>
@@ -117,7 +117,7 @@ class HomePageTwo extends React.Component {
                            <ShopCard />
                         </div>
                      </div>
-                     {/* top products section start */}
+                     {/* top products section start 
                      <div className="iron-top-products-wrapper section-pad pb-0">
                         <div className="container">
                            <div className="iron-sec-heading-wrap mb-30">
@@ -130,7 +130,7 @@ class HomePageTwo extends React.Component {
                            </div>
                            <TopProducts Data={topProducts} />
                         </div>
-                     </div>
+                     </div>*/}
                      {/* clients section start */}
                      <div className="iron-partener-wrapper section-pad">
                         <div className="container pb-60">
