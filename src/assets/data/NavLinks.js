@@ -7,7 +7,7 @@ export default [
    {
       "menu_title": "menu.Home",
       "type": "subMenu",
-      "path": "#",
+      "path": "/home-two",
       "icon": "home",
       "child_routes": [
       ]
@@ -44,13 +44,13 @@ export default [
          }
       ]
    },
-   {
+   /*{
       "menu_title": "menu.accessories",
       "type": "null",
       "path": "/accessories",
       "icon": "party_mode",
       "child_routes": null
-   },
+   },*/
    {
       "menu_title": "menu.categories",
       "path": "#",
@@ -145,12 +145,7 @@ export default [
       "type": "subMenu",
       "icon": "pages",
       "child_routes": [
-         {
-            "path": "/about-us",
-            "menu_title": "menu.aboutUs",
-            "icon": "arrow_right_alt",
-            "child_routes": null
-         },
+         
          {
             "path": "/term-and-condition",
             "menu_title": "menu.termsAndConditions",
@@ -216,6 +211,12 @@ export default [
             ]
          }
       ]
+   },
+   {  "menu_title": "menu.about-us",
+      "path": "/about-us",
+      "menu_title": "menu.aboutUs",
+      "icon": "arrow_right_alt",
+      "child_routes": null
    },
    {
       "menu_title": "menu.contact us",
