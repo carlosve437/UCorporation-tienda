@@ -6,16 +6,14 @@
 export default [
    {
       "menu_title": "menu.Home",
-      "type": "subMenu",
-      "path": "/home-two",
+      "path": "/",
       "icon": "home",
-      "child_routes": [
-      ]
+      "child_routes":null 
    },
    {
       "menu_title": "menu.shop",
       "type": "subMenu",
-      "path": "#",
+      "path": "/shop",
       "icon": "pages",
       "child_routes": [
          {
@@ -222,6 +220,12 @@ export default [
       "menu_title": "menu.contact us",
       "path": "/contact-us",
       "icon": "perm_contact_calendar",
+      "child_routes": null
+   },
+   {  "menu_title": "menu.shop",
+      "path": "/shop",
+      "menu_title": "menu.shop",
+      "icon": "arrow_right_alt",
       "child_routes": null
    },
    {
