@@ -14,12 +14,12 @@ export default {
    },
    // Default locale
    locale: {
-      locale: 'en',
-      name: 'English',
-      icon: 'en',
+      locale: 'es',
+      name: 'Spanish',
+      icon: 'es',
    },
    // Footer about description
-   AboutUs: 'Here you can use rows and columns here to organize your footer content.Lorem ipsum dolor sit amet,consectetur adipisicing elit. Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,        consectetur adipisicing elit.',
+   AboutUs: 'Somos una Empresa distribuidora de equipos tecnológicos.',
    // Copyright text
-   CopyrightText: '© All Rights Reversed | Made With Love by IRON NETWORK for better Web '
+   CopyrightText: '© All Rights Reversed | U Store Corporation '
 }
