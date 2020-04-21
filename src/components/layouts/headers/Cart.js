@@ -170,7 +170,7 @@ class Cart extends React.Component {
                      :
                      (
                         <div>
-                           <span className="text-capitalize text-14 dark-color d-block px-40 py-15">no product found</span>
+                           <span className="text-capitalize text-14 dark-color d-block px-40 py-15">no se encontro producto</span>
                         </div>
                      )
                   }
