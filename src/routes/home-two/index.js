@@ -136,7 +136,7 @@ class HomePageTwo extends React.Component {
                         <div className="container pb-60">
                            <div className="iron-sec-heading-wrap mb-40">
                               <div className="heading-title">
-                                 <h3 className="mb-0">Top brands</h3>
+                                 <h3 className="mb-0">Nuestras Marcas</h3>
                               </div>
                            </div>
                            <div className="mb-20">
