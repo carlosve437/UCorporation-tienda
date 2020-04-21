@@ -12,9 +12,5 @@ export const languages = [
         name: 'Spanish',
         icon: 'es',
     },
-    {
-        locale: 'fr',
-        name: 'French',
-        icon: 'fr',
-    }
+    
 ]
