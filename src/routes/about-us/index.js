@@ -146,7 +146,7 @@ export default class AboutUS extends Component {
                            <div className="container">
                               <div className="iron-sec-heading-wrap heading-font-v2 text-center mb-sm-60 mb-40">
                                  <div className="heading-title">
-                                    <h2>Meet Our Crew</h2>
+                                    <h2>Conoce nuestro equipo</h2>
                                  </div>
                               </div>
                               <TeamGrid teamMembers={teamData}></TeamGrid>
@@ -162,7 +162,7 @@ export default class AboutUS extends Component {
                                  <Grid item xs={12} sm={12} md={6} lg={6}>
                                     <div className="about-contact-form-inner">
                                        <div className="block-title mb-60">
-                                          <h2>Write to us</h2>
+                                          <h2>Contáctanos</h2>
                                        </div>
                                        <ContactForm />
                                     </div>
